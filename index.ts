@@ -35,7 +35,12 @@ async function callHandler(call: Call) {
         {
             type: 'digits',
             data: code,
-        }]);
+        },
+        {
+            type: 'text',
+            data: 'שלום ויום טוב',
+        },
+    ]);
 };
 
 router.get('/', callHandler);
